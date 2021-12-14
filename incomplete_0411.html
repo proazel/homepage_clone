@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8">
+    <title>Document</title>
+    <link href="./incomplete_0411.css" rel="stylesheet">
+</head>
+<body>
+    
+</body>
+    <div class="body">
+        <div class="page">
+            <div class="navbar_wrap">
+                <div class="navbar_container">
+                    <div class="navbar_desktop">
+                        <div class="navbar_logo">
+                            <a href="https://www.blizzard.com/"><img src="/images/blizzard_logo.png"></a>
+                        </div>
+                        <!-- 나브바 왼쪽-->
+                        <div class="navbar_items">
+                            <ul>
+                                <a href="#" onclick="navDropdown1(); hide();">
+                                    <li class="items_text">게임</li>
+                                    <li class="items_dropdown"><span>∨</span></li>
+                                </a>
+                            </ul>
+                            <ul>
+                                <a href="#">
+                                    <li class="items_text">샵</li>
+                                </a>
+                            </ul>
+                            <ul>
+                                <a href="#">
+                                    <li class="items_text">새소식</li>
+                                </a>
+                            </ul>
+                            <ul>
+                                <a href="#" onclick="navDropdown2(); hide();">
+                                    <li class="items_text">E스포츠</li>
+                                    <li class="items_dropdown"><span>∨</span></li>
+                                </a>
+                            </ul>
+                            <ul>
+                                <a href="#">
+                                    <li class="items_text">이벤트</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <!-- 나브바 오른쪽-->
+                        <div class="navbar_profile">
+                            <ul>
+                                <a href="#">
+                                    <li class="items_text">고객지원</li>
+                                </a>
+                            </ul>
+                            <ul>
+                                <a onclick="navDropdown3(); hide();">
+                                    <li class="items_text">내 계정</li>
+                                    <li class="items_dropdown"><span>∨</span></li>
+                                    <div class="blind hide"></div>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="games_wrap hide">
+                    
+                    <div class="tick"></div>  
+                    <div class="games_container">
+                        <div class="games_list">
+                            <div class="list_blizzard">
+                                <div class="blizzard_title">블리자드</div>
+                                <div class="blizzard_logos">
+                                    <a class="logos" href="#">
+                                        <img src="/images/blizzard_logos_1.png">
+                                        <div class="logos_text">디아블로<span>®</span> II: 레저렉션</div>
+                                    </a>
+                                    <a class="logos" href="#">
+                                    <img src="/images/blizzard_logos_2.png">
+                                    <div class="logos_text">오버워치™ 2</div>
+                                </a>
+                                <a class="logos" href="#">
+                                    <img src="/images/blizzard_logos_3.png">
+                                    <div class="logos_text">오버워치™</div>
+                                </a>
+                                <a class="logos" href="#">
+                                    <img src="/images/blizzard_logos_4.png">
+                                    <div class="logos_text">월드 오브 워크래프트<span>®</span></div>
+                                </a>
+                                <a class="logos" href="#">
+                                    <img src="/images/blizzard_logos_5.png">
+                                    <div class="logos_text">하스스톤<span>®</span></div>
+                                </a>
+                                <a class="logos" href="#">
+                                    <img src="/images/blizzard_logos_6.png">
+                                    <div class="logos_text">히어로즈 오브 더 스톰™</div>
+                                </a>
+                                <a class="logos" href="#">
+                                    <img src="/images/blizzard_logos_7.png">
+                                    <div class="logos_text">워크래프트<span>®</span> III: 리포지드™</div>
+                                </a>
+                                <a class="logos" href="#">
+                                    <img src="/images/blizzard_logos_8.png">
+                                    <div class="logos_text">디아블로<span>®</span> IV</div>
+                                </a>
+                                <a class="logos" href="#">
+                                    <img src="/images/blizzard_logos_9.png">
+                                    <div class="logos_text">디아블로<span>®</span> 이모탈™</div>
+                                </a>
+                                <a class="logos" href="#">
+                                    <img src="/images/blizzard_logos_10.png">
+                                    <div class="logos_text">디아블로<span>®</span> III</div>
+                                </a>
+                                <a class="logos" href="#">
+                                    <img src="/images/blizzard_logos_11.png">
+                                    <div class="logos_text">스타크래프트<span>®</span> II</div>
+                                </a>
+                                <a class="logos" href="#">
+                                    <img src="/images/blizzard_logos_12.png">
+                                    <div class="logos_text">스타크래프트<span>®</span> 리마스터</div>
+                                </a>
+                                <a class="logos" href="#">
+                                    <img src="/images/blizzard_logos_13.png">
+                                    <div class="logos_text">블리자드<span>®</span> 아케이드 컬렉션 </div>
+                                </a>
+                                </div>
+                            </div>
+                            <div class="list_activision">
+                                <div class="partition_left"></div>
+                                <div class="activision_title">ACTIVISION</div>
+                                <div class="activision_logos">
+                                    <a class="logos" href="#">
+                                        <img src="/images/activision_logos_1.png">
+                                        <div class="logos_text">콜 오브 듀티<span>®</span>: 블랙 옵스 콜드 워</div>
+                                    </a>
+                                    <a class="logos" href="#">
+                                        <img src="/images/activision_logos_2.svg">
+                                        <div class="logos_text">콜 오브 듀티<span>®</span>: 워존</div>
+                                    </a>
+
+                                    <a class="logos" href="#">
+                                        <img src="/images/activision_logos_3.png">
+                                        <div class="logos_text">콜 오브 듀티<span>®</span>: 모던 워페어 2 캠페인 리마스터</div>
+                                    </a>
+                                    <a class="logos" href="#">
+                                        <img src="/images/activision_logos_4.png">
+                                        <div class="logos_text">콜 오브 듀티<span>®</span>: 블랙 옵스 4</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="games_help">
+                            <a class="help_1" href="#">
+                                <div class="help_text">모든 게임</div>
+                            </a>
+                            <a class="help_2" href="#">
+                                <div class="help_text">블리자드 Battle.net 앱</div>
+                            </a>
+                            <a class="help_3" href="#">
+                                <div class="help_text">다운로드</div>
+                            </a>
+                            <a class="help_4" href="#">
+                                <div class="help_text">게임 토론장</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="esports_wrap hide">
+                    <div class="tick"></div>
+                    <div class="esports_container">
+                        <div class="esports_list">
+                            <a class="esports" href="#">
+                                <img src="images/esports_logo_1.png">
+                                <div class="esports_text">오버워치 리그</div>
+                            </a>
+                            <a class="esports" href="#">
+                                <img src="images/esports_logo_2.png">
+                                <div class="esports_text">오버워치 월드컵</div>
+                            </a>
+                            <a class="esports" href="#">
+                                <img src="images/esports_logo_3.png">
+                                <div class="esports_text">하스스톤 마스터즈</div>
+                            </a>
+                            <a class="esports" href="#">
+                                <img src="images/esports_logo_4.png">
+                                <div class="esports_text">스타크래프트 II WCS</div>
+                            </a>
+                            <a class="esports" href="#">
+                                <img src="images/esports_logo_5.png">
+                                <div class="esports_text">월드 오브 워크래프트<p>아레나 월드 챔피언십</p></div>
+                            </a>
+                        </div>
+                        <div class="esports_help">
+                            <a class="help_1" href="#">
+                                <div class="help_text">커뮤니티 토너먼트</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="account_wrap hide">
+                    <div class="tick"></div>
+                    <div class="account_container">
+                        <div class="login">
+                            <a>로그인</a>
+                        </div>
+                        <a class="management">
+                            <div class="account_text">계정 관리</div>
+                        </a>
+                        <a class="signup">
+                            <div class="account_text">무료 회원 가입</div>
+                        </a>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    var index = 0;
+                    var index2 = 0;
+                    var index3 = 0;
+                    var index4 = 0;
+                    var nav1 = document.querySelector('.games_wrap');
+                    var nav2 = document.querySelector('.esports_wrap');
+                    var nav3 = document.querySelector('.account_wrap');
+                    var nav4 = document.querySelector('.blind');
+                    function navDropdown1(){
+                        if (index == 1){
+                            nav1.setAttribute('class','games_wrap hide');
+                            
+                        }
+                        if (index >= 2){
+                            index = 0;
+                        }
+                        if (index == 0){
+                            nav1.setAttribute('class','games_wrap');
+                            nav2.setAttribute('class','esports_wrap hide');
+                            nav3.setAttribute('class','account_wrap hide');
+                        }
+                        index++;
+                    }
+                    function navDropdown2(){
+                        if (index2 == 1){
+                            nav2.setAttribute('class','esports_wrap hide');
+                        }
+                        if (index2 >= 2){
+                            index2 = 0;
+                        }
+                        if (index2 == 0){
+                            nav2.setAttribute('class','esports_wrap');
+                            nav1.setAttribute('class','games_wrap hide');
+                            nav3.setAttribute('class','account_wrap hide');
+                        }
+                        index2++;
+                    }
+                    function navDropdown3(){
+                        if (index3 == 1){
+                            nav3.setAttribute('class','account_wrap hide');
+                        }
+                        if (index3 >= 2){
+                            index3 = 0;
+                        }
+                        if (index3 == 0){
+                            nav3.setAttribute('class','account_wrap');
+                            nav1.setAttribute('class','games_wrap hide');
+                            nav2.setAttribute('class','esports_wrap hide');
+                        }
+                        index3++;
+                    }
+                    function hide(){
+                        if (index4 == 1){
+                            nav4.setAttribute('class','blind hide');
+                        }
+                        if (index4 >= 2){
+                            index4 = 0;
+                        }
+                        if (index4 == 0){
+                            nav4.setAttribute('class','blind');
+                        }
+                        index4++;
+                    }
+                </script>
+
+            </div>
+                
+            <div class="stickbar_wrap">
+                <div class="stickbar_space">
+                    <div class="stickbar_container">
+                        <div class="stickbar_area">
+                            <div class="stickbar_menu">
+                                <a class="stickbar_logo" href="https://worldofwarcraft.com/ko-kr/">
+                                    <div class="logo_icon"></div>
+                                </a>
+                                <!-- 스틱바 왼쪽-->>
+                                <div class="stickbar_left">
+                                    <ul class="stickbar_item">
+                                        <a onclick="stickDropdown1()">
+                                            <li>게임</li>
+                                            <li>∨</li>
+                                        </a>
+                                    </ul>
+                                    <ul class="stickbar_item">
+                                        <a>
+                                            <li>새소식</li>
+                                        </a>
+                                    </ul>
+                                    <ul class="stickbar_item">
+                                        <a>
+                                            <li>토론장</li>
+                                        </a>
+                                    </ul>
+                                    <ul class="stickbar_item">
+                                        <a>
+                                            <li>샵</li>
+                                        </a>
+                                    </ul>
+                                    <ul class="stickbar_item">
+                                        <a onclick="stickDropdown2()">
+                                            <li>E스포츠</li>
+                                            <li>∨</li>
+                                        </a>
+                                    </ul>
+                                    <ul class="stickbar_item">
+                                        <a>
+                                            <li>WOW 클래식</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <!-- 스틱바 오른쪽-->
+                                <div class="stickbar_right">
+                                    <ul class="stickbar_item">
+                                        <a onclick="stickDropdown3()">
+                                            <img src="/images/wow_search2.png">
+                                        </a>
+                                    </ul>
+                                    <ul class="stickbar_item">
+                                        <a>
+                                            <li>로그인</li>
+                                        </a>
+                                    </ul>
+                                    <ul class="stickbar_item">
+                                        <a>
+                                            <li>요금 결제</li>
+                                        </a>
+                                    </ul>
+                                    <ul class="stickbar_item">
+                                        <a>
+                                            <li>무료 체험</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stb_dropdown_wrap1 hide">
+                            <div class="stb_dropdown_container">
+                                <div class="stb_dropdown">
+                                    <ul class="dropmenu_1">
+                                        <div class="title">게임 플레이</div>
+                                        <div class="partition_top"></div>
+                                        <a><li>종족</li></a>
+                                        <a><li>직업</li></a>
+                                        <a><li>특성 계산기</li></a>
+                                    </ul>
+                                    <ul class="dropmenu_2">
+                                        <div class="title">워크래프트 세계관</div>
+                                        <div class="partition_top"></div>
+                                        <a><li>전체</li></a>
+                                        <a><li>비디오</li></a>
+                                        <a><li>오디오</li></a>
+                                        <a><li>만화</li></a>
+                                        <a><li>소설</li></a>
+                                        <a><li>단편 소설</li></a>
+                                        <a><li>워크래프트 이야기</li></a>
+                                    </ul>
+                                    <ul class="dropmenu_3">
+                                        <div class="title">정보 및 가이드</div>
+                                        <div class="partition_top"></div>
+                                        <a><li>WoW 신규 플레이어</li></a>
+                                        <a><li>복귀 플레이어</li></a>
+                                        <a><li>서버 현황</li></a>
+                                        <a><li>친구 초대</li></a>
+                                        <a><li>콘텐츠 업데이트 패치 노트</li></a>
+                                    </ul>
+                                    <ul class="dropmenu_4">
+                                        <div class="title">경쟁</div>
+                                        <div class="partition_top"></div>
+                                        <a><li>신화 공격대 명예의 전당</li></a>
+                                        <a><li>신화 쐐기돌 던전 순위표</li></a>
+                                        <a><li>PvP 순위표</li></a>
+                                    </ul>
+                                    <ul class="dropmenu_5">
+                                        <div class="title">확장팩</div>
+                                        <div class="partition_top"></div>
+                                        <a><li>어둠땅</li></a>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="stb_dropdown_wrap2 hide">
+                            <div class="stb_dropdown_container">
+                                <div class="stb_dropdown">
+                                    <ul class="dropmenu_1">
+                                        <div class="title">아레나 월드 챔피언십</div>
+                                        <div class="partition_top"></div>
+                                        <a><li>소개</li></a>
+                                        <a><li>일정 및 순위</li></a>
+                                        <a><li>새 소식</li></a>
+                                        <a><li>명예의 전당</li></a>
+                                        <a><li>월드 챔피언십 규정</li></a>
+                                    </ul>
+                                    <ul class="dropmenu_2">
+                                        <div class="title">신화 쐐기돌 던전 인터내셔널</div>
+                                        <div class="partition_top"></div>
+                                        <a><li>소개</li></a>
+                                        <a><li>일정 및 순위</li></a>
+                                        <a><li>새 소식</li></a>
+                                        <a><li>명예의 전당</li></a>
+                                        <a><li>신화 쐐기돌 던전 인터내셔널 규정</li></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stb_dropdown_wrap3 hide">
+                            <div class="stb_dropdown_container">
+                                <form class="searchbox">
+                                    <img src="images/wow_search2.png">
+                                    <input class="searchInput" type="search" placeholder="검색...">
+                                </form>
+                                <div class="stb_space"></div>
+                                <div class="stb_dropdown">
+                                    <ul class="dropmenu_1">
+                                        <div class="title">자원</div>
+                                        <div class="partition_top"></div>
+                                        <a><li>WoW 신규 플레이어</li></a>
+                                        <a><li>복귀 플레이어</li></a>
+                                        <a><li>특성 계산기</li></a>
+                                        <a><li>서버 현황</li></a>
+                                    </ul>
+                                    <ul class="dropmenu_2">
+                                        <div class="title">새소식</div>
+                                        <div class="partition_top"></div>
+                                        <a><li>최신 소식</li></a>
+                                    </ul>
+                                    <ul class="dropmenu_3">
+                                        <div class="title">게임 플레이</div>
+                                        <div class="partition_top"></div>
+                                        <a><li>종족</li></a>
+                                        <a><li>직업</li></a>
+                                    </ul>
+                                    <ul class="dropmenu_4">
+                                        <div class="title">토론장</div>
+                                        <div class="partition_top"></div>
+                                        <a><li>고객지원</li></a>
+                                        <a><li>커뮤니티</li></a>
+                                        <a><li>웹사이트 & 모바일 피드백</li></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script type="text/javascript">
+                            var index = 0;
+                            var index2 = 0;
+                            var index3 = 0;
+                            var stick1 = document.querySelector('.stb_dropdown_wrap1');
+                            var stick2 = document.querySelector('.stb_dropdown_wrap2');
+                            var stick3 = document.querySelector('.stb_dropdown_wrap3');
+                            function stickDropdown1(){
+                                if (index == 1){
+                                    stick1.setAttribute('class','stb_dropdown_wrap1 hide');
+                                    
+                                }
+                                if (index >= 2){
+                                    index = 0;
+                                }
+                                if (index == 0){
+                                    stick1.setAttribute('class','stb_dropdown_wrap1');
+                                    stick2.setAttribute('class','stb_dropdown_wrap2 hide');
+                                    stick3.setAttribute('class','stb_dropdown_wrap3 hide');
+                                }
+                                index++;
+                            }
+                            function stickDropdown2(){
+                                if (index2 == 1){
+                                    stick2.setAttribute('class','stb_dropdown_wrap2 hide');
+                                }
+                                if (index2 >= 2){
+                                    index2 = 0;
+                                }
+                                if (index2 == 0){
+                                    stick2.setAttribute('class','stb_dropdown_wrap2');
+                                    stick1.setAttribute('class','stb_dropdown_wrap1 hide');
+                                    stick3.setAttribute('class','stb_dropdown_wrap3 hide');
+                                }
+                                index2++;
+                            }
+                            function stickDropdown3(){
+                                if (index3 == 1){
+                                    stick3.setAttribute('class','stb_dropdown_wrap3 hide');
+                                }
+                                if (index3 >= 2){
+                                    index3 = 0;
+                                }
+                                if (index3 == 0){
+                                    stick3.setAttribute('class','stb_dropdown_wrap3');
+                                    stick1.setAttribute('class','stb_dropdown_wrap1 hide');
+                                    stick2.setAttribute('class','stb_dropdown_wrap2 hide');
+                                }
+                                index3++;
+                            }
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+            <div class="main_wrap">
+                <div class="main_container">
+                    <div class="main">
+                        <div class="video_container">
+                            <div class="video_play">
+                                <video src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/BZNXB7ZVMTDC1614620414957.mp4" data-src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/MIADXRRLBRCP1606119959603.mp4" loop="loop" muted="muted" autoplay="autoplay" playsinline="playsinline"></video>
+                            </div>
+                            <div class="video_content">
+                                <div class="video_space"></div>
+                                <div class="content1">
+                                        <h1>함께 떠나는 모험</h1>
+                                        <div class="content1_box">
+                                            <div class="ctbox_space"></div>
+                                            <p>월드 오브 워크래프트에서 아제로스의 용사가 되어 전장으로 진격해 끊임없이 변화하는 세계를 수호하세요. MMORPG 장르를 정립한 게임을 오늘 바로 무료로 체험하고 경이로운 모험을 떠나 보세요.</p>
+                                            <div class="ctbox_space2"></div>
+                                            <div class="ctbox_button">
+                                                <a class="button_link1">
+                                                    <div class="button_outer1">
+                                                        <div class="button_inner1">
+                                                            <div class="button_text">무료 체험하기</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="button_link2">
+                                                    <div class="button_outer2">
+                                                        <div class="button_inner2">
+                                                            <div class="button_text">이용권 구매하기</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                </div>
+                                <div class="video_space2"></div>
+                                <div class="content2_title">
+                                    <div class="conetnt2_item1_text">최신 소식 & 업데이트</div>
+                                    <div class="conetnt2_item2">
+                                        <a href="#" class="item2_text">새소식 모두 보기</a>
+                                    </div>
+                                </div>
+                                <div class="content2">
+                                    <div class="content2_bigbox">
+                                        <div class="bigbox box1">
+                                            <div class="bigbox_bg" style="background-image: url(/images/wow_box1.jpg);">
+                                                <ul class="bigbox_space"></ul>
+                                                <ul class="bigbox_text">
+                                                    <li>2021년 4월 7일</li>
+                                                    <li>긴급 수정 사항: 4월 7일 업데이트</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="bigbox box2">
+                                            <div class="bigbox_bg" style="background-image: url(/images/wow_box2.png);">
+                                                <ul class="bigbox_space2"></ul>
+                                                <ul class="bigbox_text">
+                                                    <li>2021년 3월 25일</li>
+                                                    <li>바나나몽치 잠금 해제! 오늘 이 친구를 손에 넣고, 기부하여 데이지까지 잠금 해제해 보세요</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="bigbox box3">
+                                            <div class="bigbox_bg" style="background-image: url(/images/wow_box3.png);">
+                                                <ul class="bigbox_space"></ul>
+                                                <ul class="bigbox_text">
+                                                    <li>2021년 3월 10일</li>
+                                                    <li>지금 이용 가능: 유랑하는 고대정령 탈것</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="bigbox box4">
+                                            <div class="bigbox_bg" style="background-image: url(/images/wow_box4.jpg);">
+                                                <ul class="bigbox_space"></ul>
+                                                <ul class="bigbox_text">
+                                                    <li>2021년 3월 9일</li>
+                                                    <li>[3월 9일 업데이트] 9.0.5 업데이트 노트</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="longbox_wrap">
+                        <div class="longbox_container">
+                            <div class="longbox1_1">
+                                <a href="#">
+                                    <div class="panel_big">
+                                        <div class="panel_big_cha"></div>
+                                    </div>
+                                    <div class="panel_small">
+                                        <div class="smallbox">
+                                            <h3>WOW 신규 플레이어</h3>
+                                            <h2>모험을 시작하세요</h2>
+                                            <div class="smallbox_text">
+                                                <span>여기서 아제로스로 떠나는 모험을 시작하고 WoW를 무료로 플레이해보세요!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="longbox1_2">
+                                <a href="#">
+                                    <div class="panel_big">
+                                        <div class="panel_big_cha"></div>
+                                    </div>
+                                    <div class="panel_small">
+                                        <div class="smallbox">
+                                            <h3>복귀 플레이어</h3>
+                                            <h2>아제로스에 돌아오신 것을 환영합니다</h2>
+                                            <div class="smallbox_text">
+                                                <span>게임에 복귀하는 법을 살펴보고 WoW와 WoW 클래식의 최신 콘텐츠를 플레이하세요.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guide">
+                        <div class="guide_area">
+                            <div class="guide_textbox">
+                                <h3 class="guide_text1">WOW 자선 애완동물 프로그램</h3>
+                                <h2 class="guide_text2">데이지와 바나나몽치를 소개합니다</h2>
+                                <div class="guide_text3">
+                                    <p>인도주의 의료 지원 단체 국경없는의사회/Médecins Sans Frontières (MSF)를</p>
+                                    <p>후원하여 코로나19에 대한 전 세계적 대응에 변화의 바람을 불러일으켜 보세요.</p>
+                                    <p>여러분의 기부는 두 마리의 귀여운 애완동물, 원숭이 바나나몽치와 나무늘보</p>
+                                    <p>데이지를 월드 오브 워크래프트 커뮤니티에 선물하는 데도 보탬이 됩니다.</p>
+                                </div>
+                                <div class="guide_button">
+                                    <a class="button_link1">
+                                        <div class="button_outer1">
+                                            <div class="button_inner1">
+                                                <div class="button_text">자세히 알아보기</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guide_space">/</div>
+                    <div class="guide2">
+                        <div class="guide_area">
+                            <div class="guide_textbox">
+                                <h3 class="guide_text1">불타는 성전 클래식</h3>
+                                <h2 class="guide_text2">곧 어둠의 문의 다시 열립니다</h2>
+                                <div class="guide_text3">
+                                    <p>아제로스를 풍미한 여러분, 이제 어둠의 문 저편의 어두운 세계가 기다립니다. 게임</p>
+                                    <p>시간을 구매하고 월드 오브 워크래프트® 클래식을 플레이하세요. 2021년에</p>
+                                    <p>출시되는 불타는 성전® 클래식에서 아웃랜드로 돌아갈 그 날을 대비할 때입니다.</p>
+                                </div>
+                                <div class="guide_button2">
+                                    <a class="button_link2">
+                                        <div class="button_outer2">
+                                            <div class="button_inner2">
+                                                <div class="button_text">지금 게임 시간 구매하기</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="guide_button1">
+                                    <a class="button_link1">
+                                        <div class="button_outer1">
+                                            <div class="button_inner1">
+                                                <div class="button_text">자세히 알아보기</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guide_space">/</div>
+                    <div class="guide3">
+                        <div class="guide_area">
+                            <div class="guide_textbox">
+                                <h3 class="guide_text1">신규 이용권 묶음 상품 탈것</h3>
+                                <h2 class="guide_text2">행운이 찾아왔소</h2>
+                                <div class="guide_text3">
+                                    <p>반짝반짝 윤이 나는 운수대통의 윈을 쓰다듬는 자에게 복이 찾아온다고 합니다.</p>
+                                    <p>고삐를 단단히 잡고 하늘로 날아오르세요. 6개월 이용권을 구매하면 무료로 받을 수</p>
+                                    <p>있으며, 별도 구매 가능합니다.</p>
+                                </div>
+                                <div class="guide_button2">
+                                    <a class="button_link2">
+                                        <div class="button_outer2">
+                                            <div class="button_inner2">
+                                                <div class="button_text">지금 구매하기</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="guide_button1">
+                                    <a class="button_link1">
+                                        <div class="button_outer1">
+                                            <div class="button_inner1">
+                                                <div class="button_text">자세히 보기</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guide_space">/</div>
+                    <div class="guide4">
+                        <div class="guide_area">
+                            <div class="guide_textbox">
+                                <h3 class="guide_text1">블리즈콘라인 게임 내 상품</h3>
+                                <h2 class="guide_text2">30년에 걸맞은 즐거움</h2>
+                                <div class="guide_text3">
+                                    <p>3가지 기념 컬렉션 팩 중 하나를 구매하고 듬직한 눈폭풍 탈것, 신비로운 달빛 깃든</p>
+                                    <p>황천의 새끼용 애완동물 등 게임 내 아이템으로 블리자드 30주년을 기념해보세요.</p>
+                                    <p>자세한 정보는 샵에서 확인하세요.</p>
+                                </div>
+                                <div class="guide_button2">
+                                    <a class="button_link2">
+                                        <div class="button_outer2">
+                                            <div class="button_inner2">
+                                                <div class="button_text">지금 구매하기</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="guide_button1">
+                                    <a class="button_link1">
+                                        <div class="button_outer1">
+                                            <div class="button_inner1">
+                                                <div class="button_text">자세히 보기</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guide_space">/</div>
+                    <div class="guide5">
+                        <div class="guide_area">
+                            <div class="guide_textbox">
+                                <h2 class="guide_text2">어둠땅 출시 트레일러</h2>
+                                <div class="guide_button1">
+                                    <a class="button_link1">
+                                        <div class="button_outer1">
+                                            <div class="button_inner1">
+                                                <div class="button_text">영상 보기</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guide_space">/</div>
+                    <div class="longbox_wrap2">
+                        <div class="longbox_container">
+                            <div class="longbox1_1">
+                                <a href="#">
+                                    <div class="panel_big"></div>
+                                    <div class="panel_small">
+                                        <div class="smallbox">
+                                            <h3>어둠땅</h3>
+                                            <h2>콘텐츠 업데이트 노트</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="longbox1_2">
+                                <a href="#">
+                                    <div class="panel_big"></div>
+                                    <div class="panel_small">
+                                        <div class="smallbox">
+                                            <h3>최신 업데이트</h3>
+                                            <h2>긴급 수정 사항</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guide_space">/</div>
+                    <div class="guide6">
+                        <div class="guide_area">
+                            <div class="guide_textbox">
+                                <h2 class="guide_text2">친구를 초대하세요</h2>
+                                <div class="guide_text3">
+                                    <p>아제로스로 친구를 초대하고, 함께 모험을 떠나고, 특별한 보상도 획득하세요.</p>
+                                    <p>친구가 얼라이언스 또는 호드와 함께 전투에 참여하면 게임 시간, 탈것, 애완동물 등</p>
+                                    <p>멋진 게임 내 혜택을 받을 수 있습니다.</p>
+                                </div>
+                                <div class="guide_button">
+                                    <a class="button_link1">
+                                        <div class="button_outer1">
+                                            <div class="button_inner1">
+                                                <div class="button_text">자세히 보기</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guide_space">/</div>
+                    <div class="guide7">
+                        <div class="guide_area">
+                            <div class="guide_textbox">
+                                <h3 class="guide_text1">최신 확장팩</h3>
+                                <h2 class="guide_text2">어둠땅</h2>
+                                <div class="guide_text3">
+                                    <p>어둠땅 사이트를 확인하고 월드 오브 워크래프트의 사후세계를 탐험해보세요.</p>
+                                    <p>새로운 기능과 게임플레이, 이야기 등 다양한 내용을 살펴보세요!</p>
+                                </div>
+                                <div class="guide_button2">
+                                    <a class="button_link2">
+                                        <div class="button_outer2">
+                                            <div class="button_inner2">
+                                                <div class="button_text">구매하기</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="guide_button1">
+                                    <a class="button_link1">
+                                        <div class="button_outer1">
+                                            <div class="button_inner1">
+                                                <div class="button_text">자세히 보기</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guide_space">/</div>
+                </div>
+                <div class="footer_wrap">
+                    <div class="footer_container1">
+                        <div class="footer_top">
+                            <div class="ft_outer">
+                                <div class="ft_inner">
+                                    <div class="ft_text">워크래프트 팔로우하기</div>
+                                    <div class="ft_icon"># 아이콘 #</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_container2">
+
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</html>
